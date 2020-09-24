@@ -1,0 +1,17 @@
+a = input()
+a = a.split(" ")
+s = int(a[0])
+t = int(a[1])
+f = int(a[2])
+if s == 24:
+    s = 0
+if t == 24:
+    t = 0
+if ((s>=0) & (s<=24) & (t>=0) & (t<=24) & (f>=-12) & (f<=12)):
+    total = s + t + f
+    if total>=0 and total<24:
+        print(total)
+    elif total>=24:
+        print(total-24)
+    elif total < 0:
+        print(24+total)
