@@ -1,0 +1,13 @@
+m=[["0","1","2","3","4","5","6","7","8","9"],["6","2","5","5","4","5","6","3","7","6"]]
+cont = 0
+N=int(input())
+for i in range(N):
+    numero=str(input())
+    for q in range(len(numero)):
+        for j in range(10):
+            if numero[q] == m[0][j]:
+                cont = cont + int(m[1][j])
+    print(cont, "leds")
+    cont = 0
+    
+  
